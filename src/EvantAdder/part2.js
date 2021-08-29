@@ -4,9 +4,9 @@ class LayoutPage extends Component {
     super(props);
     this.state = {
       display: false,
-      value1: "Evant Name",
-      value2: "Start Date",
-      value3: "End Date",
+      value1: "text",
+      value2: "data",
+      value3: "date",
       isInEditMode: false,
     };
   }

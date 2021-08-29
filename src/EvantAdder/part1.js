@@ -42,10 +42,10 @@ class EventsAdder extends Component {
               Add Event
             </button>
             <div className="title">
-              <div>Events</div>
-              <div>Start Date</div>
-              <div>End Date</div>
-              <div>Actions</div>
+              <div>EVENTS</div>
+              <div>START DATE</div>
+              <div>END DATE</div>
+              <div className="actions">ACTIONS</div>
             </div>
           </div>
           {this.state.list.map((item) => (
