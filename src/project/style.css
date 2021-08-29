@@ -56,6 +56,17 @@ header {
   align-items: center;
   /* border: solid 2px blueviolet; */
 }
+.heroParent {
+  /* border: solid red 1px; */
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 20px;
+  border: solid 3px rgb(255, 50, 50);
+}
+.input_parent {
+  /* border: black solid 1px; */
+  padding: 0 20px;
+}
 
 input {
   width: 260px;
@@ -64,6 +75,10 @@ input {
   color: rgb(62, 0, 119);
   /* color: rgb(0, 39, 75); */
   outline: none;
+  border-radius: 5px;
+  padding-left: 10px;
+  outline: none;
+  border: rgb(62, 0, 119) solid 2px;
 }
 .hero {
   width: 260px;
@@ -73,6 +88,7 @@ input {
   color: rgb(255, 78, 78);
   outline: none;
   background-color: rgb(255, 233, 205);
+  background-color: rgb(255, 255, 255);
   pointer-events: none;
   cursor: not-allowed;
 }

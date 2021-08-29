@@ -30,7 +30,7 @@ class LayoutPage extends Component {
   };
   defaultHandler = () => {
     return (
-      <div>
+      <div className="heroParent">
         <button className="hero" onClick={this.editHandler}>
           {this.state.value1}
         </button>
@@ -50,7 +50,7 @@ class LayoutPage extends Component {
           <div>
             {this.state.isInEditMode ? (
               <div>
-                <div>
+                <div className="input_parent">
                   <input
                     type="text"
                     defaultValue={this.state.value1}
