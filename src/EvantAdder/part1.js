@@ -41,6 +41,12 @@ class EventsAdder extends Component {
             <button className="add_events" onClick={this.addItem}>
               Add Event
             </button>
+            <div className="title">
+              <div>Events</div>
+              <div>Start Date</div>
+              <div>End Date</div>
+              <div>Actions</div>
+            </div>
           </div>
           {this.state.list.map((item) => (
             <Layout

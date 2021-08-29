@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import EvantsAddr from "./project/part1";
+import EvantsAddr from "./EvantAdder/part1";
 
 class App extends Component {
   render() {
