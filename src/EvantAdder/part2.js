@@ -57,12 +57,12 @@ class LayoutPage extends Component {
                     ref="theTextInput1"
                   />
                   <input
-                    type="text"
+                    type="date"
                     defaultValue={this.state.value2}
                     ref="theTextInput2"
                   />
                   <input
-                    type="text"
+                    type="date"
                     defaultValue={this.state.value3}
                     ref="theTextInput3"
                   />
