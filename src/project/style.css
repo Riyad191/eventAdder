@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.main_section {
+  border-radius: 20px;
+  border: red;
+}
+header {
+  display: flex;
+  justify-content: space-evenly;
+  border: rgb(62, 0, 119) solid 8px;
+  align-items: center;
+  font-size: 25px;
+  color: rgb(255, 78, 78);
+  flex-direction: column;
+  height: 160px;
+  width: 100%;
+  background-color: rgb(255, 239, 210);
+}
+#number {
+  font-size: 50px;
+  color: rgb(0, 40, 78);
+  font-family: "Courier New", Courier, monospace;
+}
+
+.main_card {
+  height: 600px;
+  width: 1200px;
+  border: solid 8px rgb(62, 0, 119);
+  background-color: rgb(255, 233, 205);
+  overflow: auto;
+}
+.add_events {
+  height: 60px;
+  width: 160px;
+  margin: 20px 0 0 20px;
+  background-color: rgb(0, 39, 75);
+  text-align: center;
+  border-radius: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 30px;
+  color: rgb(255, 219, 152);
+}
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: solid 2px blueviolet; */
+}
+
+input {
+  width: 260px;
+  margin: 0 20px;
+  font-size: 25px;
+  color: rgb(62, 0, 119);
+  /* color: rgb(0, 39, 75); */
+  outline: none;
+}
+.hero {
+  width: 260px;
+  border: rgb(62, 0, 119) 1px;
+  margin: 0 50px;
+  font-size: 25px;
+  color: rgb(255, 78, 78);
+  outline: none;
+  background-color: rgb(255, 233, 205);
+}
+#btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 180px;
+
+  margin: 20px 0 20px 20px;
+  background-color: wheat;
+  padding: 20px 20px 20px 34px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: rgb(0, 39, 75);
+}
+.hero {
+  width: 200px;
+}
+button {
+  font-size: 25px;
+  background-color: white;
+  color: rgb(62, 0, 119);
+  outline: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+
+  color: rgb(255, 219, 152);
+  background-color: rgb(0, 39, 75);
+}
+.btn {
+  width: 100px;
+  background-color: rgb(0, 39, 75);
+  text-align: center;
+}
