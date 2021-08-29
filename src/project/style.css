@@ -73,14 +73,14 @@ input {
   color: rgb(255, 78, 78);
   outline: none;
   background-color: rgb(255, 233, 205);
+  pointer-events: none;
+  cursor: not-allowed;
 }
 #btn {
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 180px;
-
   margin: 20px 0 20px 20px;
   background-color: wheat;
   padding: 20px 20px 20px 34px;
@@ -90,6 +90,7 @@ input {
 }
 .hero {
   width: 200px;
+  cursor: default;
 }
 button {
   font-size: 25px;
