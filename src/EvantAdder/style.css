@@ -10,12 +10,7 @@ body {
   align-items: center;
   height: 100vh;
 }
-/* .main_section {
-  height: 100%;
-  width: 100%;
 
-  border: solid rgb(58, 168, 25) 3px;
-} */
 header {
   display: flex;
   justify-content: space-evenly;

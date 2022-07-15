@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import Layout from "./part2";
+import Layout from "./Layout";
+import Header from "./Header";
+import AddItem from "./AddItem";
 import "./style.css";
 class EventsAdder extends Component {
   constructor(props) {
@@ -8,8 +10,9 @@ class EventsAdder extends Component {
       item: "",
       list: [],
     };
+    this.addItem = this.addItem.bind(this);
   }
-  addItem = (e) => {
+  addItem(e) {
     e.preventDefault();
     const objectItem = {
       id: 1000 + Math.random(),
@@ -17,7 +20,7 @@ class EventsAdder extends Component {
     };
     this.state.list.push(objectItem);
     this.setState({ item: "" });
-  };
+  }
   deleteItem(id) {
     console.log(id);
     const list = [...this.state.list];
@@ -26,36 +29,28 @@ class EventsAdder extends Component {
   }
   render() {
     return (
-      <section className="main_section">
-        <header>
-          <h1>Events Adder App </h1>
-          <h1>
-            {" "}
-            Number of Events: <span id="number">
-              {this.state.list.length}
-            </span>{" "}
-          </h1>
-        </header>
-        <div className="main_card">
-          <div className="add_btn_parent">
-            <button className="add_events" onClick={this.addItem}>
-              Add Event
-            </button>
-            <div className="title">
-              <div>EVENTS</div>
-              <div>START DATE</div>
-              <div>END DATE</div>
-              <div className="actions">ACTIONS</div>
+      <>
+        <section className="main_section">
+          <Header list={this.state.list} />
+          <div className="main_card">
+            <div className="add_btn_parent">
+              <AddItem addItem={this.addItem} />
+              <div className="title">
+                <div>EVENTS</div>
+                <div>START DATE</div>
+                <div>END DATE</div>
+                <div className="actions">ACTIONS</div>
+              </div>
             </div>
+            {this.state.list.map((item) => (
+              <Layout
+                key={item.id}
+                remove={() => this.deleteItem(item.id)}
+              ></Layout>
+            ))}
           </div>
-          {this.state.list.map((item) => (
-            <Layout
-              key={item.id}
-              remove={() => this.deleteItem(item.id)}
-            ></Layout>
-          ))}
-        </div>
-      </section>
+        </section>
+      </>
     );
   }
 }
