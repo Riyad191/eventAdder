@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import Layout from "./Layout";
 import Header from "./Header";
 import AddItem from "./AddItem";
+import Actions from "./Actions";
 import "./style.css";
-class EventsAdder extends Component {
+class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -35,12 +36,7 @@ class EventsAdder extends Component {
           <div className="main_card">
             <div className="add_btn_parent">
               <AddItem addItem={this.addItem} />
-              <div className="title">
-                <div>EVENTS</div>
-                <div>START DATE</div>
-                <div>END DATE</div>
-                <div className="actions">ACTIONS</div>
-              </div>
+              <Actions />
             </div>
             {this.state.list.map((item) => (
               <Layout
@@ -54,4 +50,4 @@ class EventsAdder extends Component {
     );
   }
 }
-export default EventsAdder;
+export default App;

@@ -56,25 +56,24 @@ header {
   align-items: center;
   /* border: solid 2px blueviolet; */
 }
-.title {
+.actions {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 80px;
   width: 100%;
-  font-size: 26px;
+  font-size: 20px;
   background-color: rgb(0, 39, 75);
   background-color: rgb(0, 49, 105);
   color: rgb(255, 169, 40);
-  /* color: rgb(255, 255, 255); */
   margin-top: 20px;
   border-top: solid 6px rgb(255, 169, 40);
   border-bottom: solid 6px rgb(255, 169, 40);
   padding-left: 20px;
 }
-.actions {
+/* .actions {
   margin-left: 100px;
-}
+} */
 .heroParent {
   /* border: solid red 1px; */
   background-color: rgb(255, 255, 255);
