@@ -5,8 +5,6 @@ function Header({ list }) {
     title: "Events Adder App",
     EventsCount: "Number of Events",
   };
-  console.log(list);
-
   return (
     <header>
       <h1>{theHeaderData.title}</h1>

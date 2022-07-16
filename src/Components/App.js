@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Layout from "./Layout";
 import Header from "./Header";
 import AddItem from "./AddItem";
 import Actions from "./Actions";
+import Layout from "./Layout";
 import "./style.css";
 class App extends Component {
   constructor(props) {
@@ -23,7 +23,6 @@ class App extends Component {
     this.setState({ item: "" });
   }
   deleteItem(id) {
-    console.log(id);
     const list = [...this.state.list];
     const updatedList = list.filter((item) => item.id !== id);
     this.setState({ list: updatedList });
@@ -39,10 +38,13 @@ class App extends Component {
               <Actions />
             </div>
             {this.state.list.map((item) => (
-              <Layout
-                key={item.id}
-                remove={() => this.deleteItem(item.id)}
-              ></Layout>
+              <div>
+                <Layout
+                  key={item.id}
+                  id={item.id}
+                  remove={() => this.deleteItem(item.id)}
+                />
+              </div>
             ))}
           </div>
         </section>
